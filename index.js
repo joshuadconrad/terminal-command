@@ -10,6 +10,6 @@ const terminalCommands = require('./terminal-commands');
 
 terminalCommands.ls();
 
-terminalCommands.mkdir();
+terminalCommands.mkdir('new-directory');
 
-terminalCommands.touch();
+terminalCommands.touch('new-file.txt');

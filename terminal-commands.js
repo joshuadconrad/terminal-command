@@ -10,14 +10,14 @@ module.exports.ls = () => {
   });
 };
 
-module.exports.touch = () => {
-  fs.writeFile('new-file.txt', 'new file', 'utf8', (err) => {
+module.exports.touch = (title) => {
+  fs.writeFile(title, 'new file', 'utf8', (err) => {
     if (err) throw err;
   });
 };
 
-module.exports.mkdir = () => {
-  fs.mkdir('./new-directory', { recursive: true }, (err) => {
+module.exports.mkdir = (title) => {
+  fs.mkdir('./' + title, { recursive: true }, (err) => {
     if (err) throw err;
   });
 };
